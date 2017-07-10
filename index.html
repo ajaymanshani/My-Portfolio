@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<title>AJAY MANSHANI</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+
+<style>
+ul#menu li {
+    display:inline;
+}
+</style>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card-2">
+    <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT ME</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small"> MY PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT ME</a>
+     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="demo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#home" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large">ABOUT ME</a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large">MY PROJECTS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT ME</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+ <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center" id="home">
+    <img src="Headerimage.jpg" style="width:100%">
+  </div>
+
+  <!-- About section -->
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px;" id="about">
+    <h2 style="text-decoration:underline;" class="w3-wide">ABOUT ME</h2>
+    <div class="w3-half">
+        <br>
+        <img src="Ajay.jpg" class="w3-round" alt="Random Name" style="width:50%">
+        </div>
+        <br>
+    <p class="w3-justify">Hello there! Thanks for stopping by.
+ I am a frontend web developer in making. It has been a few months I have started web developement and this field has totally amazed me. By far I have worked in HTML, CSS, JavaScript, JSON and frontend frameworks such as W3.CSS and Bootstrap.<br> Currently I am pursuing Bachelor of Technology degree in Computer Science and Engineering with specialization in Oil & Gas Informatics from "University of Petroleum & Energy Studies, Dehradun". In my leisure time, I love listening to music and binge watching TV Series and my favourite movies. I am also an active writer on Quora and Oyewiki.com, I love to meet and get to know new people, new cultures and people from different religions, It gives me more reasons to celebrate! Well that's all about me :-) 
+</p>
+</div>
+
+<!-- Projects Section -->
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="projects">
+    <h2 style="text-decoration:underline;" class="w3-wide">MY PROJECTS</h2>
+    <br>
+    <img src="p1.png" alt="shubhamgroup" style="width:100%">
+    <a href="https://shubhamgroup.000webhostapp.com/" target="_blank">SHUBHAM GROUP</a> 
+    <br>
+    <p class="w3-justify w3-center">Developed a fully responsive, mobile first website for a business group based in Raisen District of Madhya Pradesh.</p>
+
+
+<!-- Contact Me section -->
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="contact">
+    <h2 style="text-decoration:underline;" class="w3-wide">CONTACT ME</h2>
+    <br>
+    <p class="w3-justify w3-center"> Do you want to contact me?<br>Be it for requesting more info,or just for a friendly Hello!,<br>feel free to contact me, i will respond without fail.</p>
+    </div>
+     <div class="w3-half">
+    <img src="call.png" alt="Random Name" style="width:50px;height:50px;border:0;"><p>+(91)-7891037425</p>
+    </div>
+    <div>
+    <img src="email.png" alt="Random Name" style="width:50px;height:50px;border:0;"><p>ajaymanshani3@gmail.com</p>
+    </div>
+    <br>
+    <h4>YOU CAN FIND ME ON<h4>
+  <ul id="menu">
+  <li><a href="https://www.facebook.com/ajay.manshani.3" target=_blank><img src="fb.png" alt="HTML tutorial" style="width:50px;height:50px;border:0;"></a></li>
+  <li><a href="https://www.instagram.com/ajaymanshani/?hl=en" target=_blank><img src="insta.png" alt="HTML tutorial" style="width:50px;height:50px;border:0;"></a></li>
+  <li><a href="https://www.linkedin.com/in/manshaniajay/" target=_blank><img src="linkedin.png" alt="HTML tutorial" style="width:50px;height:50px;border:0;"></a></li>
+  <li><a href="https://twitter.com/ajaymanshani3" target=_blank><img src="twitter.png" alt="HTML tutorial" style="width:50px;height:50px;border:0;"></a></li>
+  <li><a href="https://github.com/ajaymanshani" target=_blank><img src="Git.png" alt="HTML tutorial" style="width:50px;height:50px;border:0;"></a></li>
+  <li><a href="https://www.quora.com/profile/Ajay-Manshani" target=_blank><img src="quora.png" alt="HTML tutorial" style="width:50px;height:50px;border:0;"></a></li>
+</ul>  
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("demo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
